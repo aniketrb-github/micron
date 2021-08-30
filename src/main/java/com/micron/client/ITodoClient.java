@@ -1,6 +1,5 @@
 package com.micron.client;
 
-import com.micron.dto.AlbumResponseDto;
 import com.micron.dto.TodoResponseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

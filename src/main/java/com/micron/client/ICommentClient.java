@@ -1,7 +1,6 @@
 package com.micron.client;
 
 import com.micron.dto.CommentResponseDto;
-import com.micron.dto.UserResponseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
