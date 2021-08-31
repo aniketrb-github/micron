@@ -86,6 +86,7 @@ public class TodoController {
         return new ResponseEntity<Object>(result, HttpStatus.OK);
     }
 
+    // Following are the regular REST API call
     @GetMapping("/todos")
     public List<TodoResponseDto> getTodos() {
         return todoService.getAllTodos();

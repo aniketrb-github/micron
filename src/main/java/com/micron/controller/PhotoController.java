@@ -86,19 +86,17 @@ public class PhotoController {
         return new ResponseEntity<Object>(result, HttpStatus.OK);
     }
 
-    // REGULAR GET API CALL
+    // Following are the regular REST API calls
     @GetMapping("/photos")
     public List<PhotoResponseDto> getAllPhotos() {
         return photoService.getAllPhotos();
     }
 
-    // REGULAR GET API CALL
     @GetMapping("/albums/{albumId}/photos")
     public List<PhotoResponseDto> getPhotosByAlbumId(@PathVariable Integer albumId) {
         return photoService.getPhotosByAlbumId(albumId);
     }
 
-    // REGULAR GET API CALL
     @GetMapping("/photos/{id}")
     public PhotoResponseDto getPhotoById(@PathVariable Integer id) {
         return photoService.getPhotoById(id);
