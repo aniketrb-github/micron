@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/micron")
+@RequestMapping
 public class TodoController {
 
     @Autowired

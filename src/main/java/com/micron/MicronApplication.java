@@ -14,6 +14,8 @@ public class MicronApplication {
 
 	public static void main(String[] args) {
 		logger.info("Micron application started...");
+		// Different way to set te context path of SpringBoot application
+		// System.setProperty("server.servlet.context-path", "/micron");
 		SpringApplication.run(MicronApplication.class, args);
 	}
 
