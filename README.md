@@ -170,3 +170,15 @@ D4)
 curl --location --request GET 'http://localhost:8080/micron/todos'
 curl --location --request GET 'http://localhost:8080/micron/users/5/todos'
 curl --location --request GET 'http://localhost:8080/micron/todos/42'
+
+
+
+Swagger API Documentation
+http://localhost:8080/your-app-root/swagger-ui/
+
+http://localhost:18080/micron/swagger-ui/
+
+http://localhost:18080/micron/v2/api-docs
+The result is a JSON response with a large number of key-value pairs, which is not very human readable. 
+Fortunately, Swagger provides Swagger UI for this purpose.
+
