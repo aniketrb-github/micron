@@ -14,11 +14,20 @@ import java.util.List;
 public interface IPostClient {
 
     @PostMapping(value = "/posts")
-    @Headers(value = "Content-Type: application/json; charset=UTF-8")
+    //@Headers(value = "Content-Type: application/json; charset=UTF-8")
+    @Headers({"Content-Type: application/json", "charset=UTF-8"})
     public PostResponseDto createPost(@RequestBody PostResponseDto responseDto);
-
-    //@Headers({"Content-Type: application/json"})
 
     @GetMapping(value = "/users/{id}/posts")
     public List<PostResponseDto> getAllPostsByUserId(@PathVariable Integer id);
 }
+
+/*
+How to use headers in Feign for POST API
+https://www.tabnine.com/code/java/classes/feign.Headers
+
+API's with/without Key for Practise
+https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+https://github.com/public-apis/public-apis#weather
+
+ */

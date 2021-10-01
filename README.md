@@ -175,12 +175,11 @@ curl --location --request GET 'http://localhost:8080/micron/todos/42'
 curl --location --request GET 'http://localhost:8080/micron/users/1/posts'
 
 curl --location --request POST 'http://localhost:8080/micron/posts' \
---header 'content: application/json' \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "userId": 1,  
-  "title": "DEMO POST CREATION",
-  "body": "DEMO POST DEMO 12345 BODY"
+  "title": "ANIKET12345 POST CREATE ",
+  "body": "ANIKET POST DEMO 12345 BODY"
 }'
 
 Swagger API Documentation
