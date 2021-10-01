@@ -87,6 +87,11 @@ public class AlbumController {
         return new ResponseEntity<Object>(result, HttpStatus.OK);
     }
 
+
+
+
+
+
     // Returns a list of entire albums i.e the entire AlbumResponseDTO object is contained in the list
     @GetMapping("/albums")
     public List<AlbumResponseDto> getAlbums() {

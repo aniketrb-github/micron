@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients
+@EnableFeignClients( basePackages = "com.micron.client")
 public class MicronApplication {
 
 	public static Logger logger = LoggerFactory.getLogger(MicronApplication.class);

@@ -171,14 +171,24 @@ curl --location --request GET 'http://localhost:8080/micron/todos'
 curl --location --request GET 'http://localhost:8080/micron/users/5/todos'
 curl --location --request GET 'http://localhost:8080/micron/todos/42'
 
+#### Post Resource API
+curl --location --request GET 'http://localhost:8080/micron/users/1/posts'
 
+curl --location --request POST 'http://localhost:8080/micron/posts' \
+--header 'content: application/json' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "userId": 1,  
+  "title": "DEMO POST CREATION",
+  "body": "DEMO POST DEMO 12345 BODY"
+}'
 
 Swagger API Documentation
-http://localhost:8080/your-app-root/swagger-ui/
+- TEMPLATE SWAGGER URI http://localhost:8080/<your-app-root>/swagger-ui/
 
-http://localhost:18080/micron/swagger-ui/
+- http://localhost:8080/micron/swagger-ui/
 
-http://localhost:18080/micron/v2/api-docs
+- http://localhost:8080/micron/v2/api-docs
+
 The result is a JSON response with a large number of key-value pairs, which is not very human readable. 
 Fortunately, Swagger provides Swagger UI for this purpose.
-
