@@ -99,9 +99,9 @@ public class AlbumController {
     }
 
     // Returns a List of Albums which belongs to the particular userId
-    @GetMapping("/users/{userId}/albums")
-    public List<AlbumResponseDto> getAlbumsByUserId(@PathVariable Integer userId) {
-        return albumService.getAlbumsByUserId(userId);
+    @GetMapping("/users/{id}/albums")
+    public List<AlbumResponseDto> getAlbumsByUserId(@PathVariable Integer id) {
+        return albumService.getAlbumsByUserId(id);
     }
 
     // Returns an Albums based on an albumId

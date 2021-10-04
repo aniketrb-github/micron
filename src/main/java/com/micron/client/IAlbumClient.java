@@ -13,8 +13,8 @@ public interface IAlbumClient {
     @GetMapping("/albums")
     public List<AlbumResponseDto> getAlbums();
 
-    @GetMapping("/users/{userId}/albums")
-    public List<AlbumResponseDto> getAlbumsByUserId(@PathVariable  Integer userId);
+    @GetMapping("/users/{id}/albums")
+    public List<AlbumResponseDto> getAlbumsByUserId(@PathVariable  Integer id);
 
     @GetMapping("/albums/{id}")
     public AlbumResponseDto getAlbumById(@PathVariable  Integer id);
